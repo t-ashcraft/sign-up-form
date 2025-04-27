@@ -70,20 +70,25 @@ body {
 .formsection {
     width:100%;
     background-color: white;
-
+    box-shadow: 4px 2px 2px lightgray;
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: row;
 }
 
 .formtitle {
-    padding:16px;
+    margin:16px;
 }
 
 form {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     padding:12px;
+    width:55vw;
 }
-form > div {
-    margin:12px;
+
+form > div > div {
+    margin:12px 2vw;
 }
 
 .formentry {
@@ -93,4 +98,27 @@ form > div {
 
 label {
     font-size:small;
+}
+
+button {
+    color: white;
+    background-color: darkolivegreen;
+    padding:1em 1.5em;
+    border-radius:5px;
+    margin:12px;
+    box-shadow: 2px 2px 2px lightgray;
+    width: min(30vw,200px);
+
+}
+
+.login {
+    margin:12px;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:user-valid {
+    border-color:green;
 }
