@@ -13,17 +13,51 @@
             <div class="logotext">LOGO</div>
         </div>
         <div class="footer">
-            <p1 class="footertext">Photo by Halie West on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" >Unsplash</a></p1>
+            <p1 class="footertext">Photo by Halie West on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank">Unsplash</a></p1>
         </div>
     </div>
     <div class="formbody">
         <h2 class="title">This is a template sign up form</h2>
         <div class="formsection">
-            <h3 class="formtitle">title</h3>
-            <form action=""></form>
-            <button class="submit"></button>
-            <p1 class="login"></p1>
+            <h3 class="formtitle">Please fill out the form below:</h3>
+            <form action="#" method="get">
+                <div class="leftside">
+                    <div class="formentry">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" required placeholder="ex: John...">
+                    </div>
+                    <br>
+                    <div class="formentry">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" required placeholder="email@gmail.com">
+                    </div>
+                    <br>
+                    <div class="formentry">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="formentry">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" required placeholder="ex: Doe...">
+                    </div>
+                    <br>
+                    <div class="formentry">
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="tel" id="phone_number" required placeholder="ex: 555-555-5555">
+                    </div>
+                    <br>
+                    <div class="formentry">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" id="confirm_password" required>
+                    </div>
+                </div>
+            </form>
+            
         </div>
+        <button class="submit" type="submit">Submit</button>
+        <p1 class="login" style="font-size:smaller">Already have an account? <a href="about:blank">Login</a> instead.</p1>
     </div>
 </body>
 </html>
